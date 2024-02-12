@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="chip.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Calvin Ristad</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a href="#" class="nav-link" target="_top">
+        <button class="btn btn-primary btn-lg btn-home m-2" id="homeButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+          </svg>
+        </button>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#serviceandactivities" class="nav-link">Service/Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="./resume.html" class="nav-link">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <section class="bg-dark text-light p-5 text-center"> <!-- text-sm-start animate__animated animate__backInLeft -->
+    <div class="container pt-4">
+      <div class="d-sm-flex align-items-center">
+        <div class="col pt-4 wow animate__animated animate__backInLeft">
+          <h1 class="">Calvin <span class="text-highlighted">Ristad</span></h1>
+          <p class="lead">
+            Computer Science Major at Rutgers University
+          </p>
+          <a href="https://github.com/Centipede5" class="text-decoration-none" target="_blank">
+            <button class="btn btn-primary btn-lg btn-github m-2" id="githubButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/calvin-ristad-195b03183" class="text-decoration-none" target="_blank">
+            <button class="btn btn-primary btn-lg btn-linkedin m-2" id="linkedinButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="container col">
+          <img class="rounded img-fluid d-none flex-row-reverse d-sm-block" src="calvinristad.png" alt="Calvin Ristad">
+        </div>
+
+      </div>
+      <a id="experience"></a>
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="bg-lb text-dark p-5">
+      <div class="container">
+
+        <h3> Experience </h3>
+        <div class="row justify-content-center">
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>0NCH41N Games</b></h4>
+            <h5 class="fw-light"><b>Co-Founder and Software Developer</b></h5>
+            <p>
+              Starting in 2021 I co-founded <span class="fst-italic">0NCH41N Games</span>, a game development company focused on multiplayer Web3 games. 
+              Initially we focused on creating a Yield Aggregation system <span class="fst-italic">HellHound.dog</span> that utilized a unique reflection system to maximize long-term yield.
+              In 2023 we launched LLCGame.io, a real-time multiplayer browser game with a decentralized cryptocurrency exchange. 
+              After the beta test I helped secure over <b>$20,000 in grant funding</b> from Arbitrum, Findora, and Lootchain to fund further development and marketing.
+              In addition to being responsible for the game development, I have also represented the company in several social media interviews with major industry players such as Polygon and Arbitrum. 
+              We recently partnered with the genAI startup Scenario and are working to integrate generative AI into our games, with a focus on user-generated content and moddalibity.
+              
+            </p>
+            <div class="d-lg-none">
+              <a href="https://llcgame.io/" target="_blank">
+                <img class="rounded" src="llcgamepng.png" alt="LLCGame" width="80%">
+              </a>
+            </div>
+
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>VarietySplash Productions</b></h4>
+            <h5 class="fw-light"><b>Software Engineering Intern</b></h5>
+            <p>
+              During the summer of 2023, I worked as a Software Engineering Intern for 
+              <a href="https://varietysplash.com/" class="text-dark" target="_blank">
+                <span class="fst-italic">VarietySplash Productions</span>
+              </a>
+              <br>
+              While there, I lead an international team of developers working on various applications to assist in the creation of digital media. 
+              I was first tasked with working on a web scraper that would allow the content creators to easily find and use media from the internet.
+              <br>
+              In this role, I worked closely with the content creation team, tweaking the application to fit their needs and making sure it was user-friendly and performant. 
+              After finishing the scraping application ahead of schedule I was asked to manage a 3 person team working on a crime mapping app for IOS and Andriod. 
+              In working on this, I made a comprehensive plan for the app's development, designed the architecture, and worked with the UI/UX team to make sure the app was user-friendly and intuitive. 
+              
+            </p>
+            <div class="d-lg-none">
+              <a href="https://varietysplash.com/" target="_blank">
+                <img class="rounded" src="variety_splash_media_cover.jpg" alt="VarietySplash" width="80%">
+              </a>
+            </div>
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>Mixed Reality Laboratory</b></h4>
+            <h5 class="fw-light"><b>Research Intern</b></h5>
+            <p>
+              During the Summer of 2020, I joined the <span class="fst-italic">Mixed Reality Laboratory</span> at the
+              <span class="fst-italic">University of Illinois, Chicago</span>,
+              an organization dedicated to bringing virtual and augmented reality to the field of medicine.
+              <br>
+              I worked on a virtual reality (VR) based device called <span class="fst-italic">CathSym</span> aimed at
+              bringing 3D visualization and haptic feedback to catheterization
+              training. I developed solutions within the Unity development engine and learned C# to controll the
+              scripting API.
+              I was mainly focused on incorporating optimal UI characteristics, and towards this end I interviewed
+              medical professionals and design researchers.
+              <br>
+              My most significant contribution to the project was redesigning the visual simulation of the catheter
+              within the graphics interface, which made
+              <span class="fw-bold">over a 40%</span> in the resource costs usage listed in the Unity profiler.
+              <br>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" class="text-dark" target="_blank">
+                Find the <span class="fst-italic">CathSym</span> paper here.
+              </a>
+            </p>
+            <div class="d-lg-none">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+                <img class="rounded" src="uic_white.png" alt="UIC" width="80%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://llcgame.io/" target="_blank">
+              <img class="rounded" src="llcgamepng_crop.png" alt="Splunk" width="80%">
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://varietysplash.com/" target="_blank">
+              <img class="rounded" src="variety_splash_media_cover.jpg" alt="VarietySplash" width="80%">
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+              <img class="rounded" src="uic_white.png" alt="UIC" width="80%" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <a id="projects"></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-dark text-light p-5">
+      <div class="container align-items-center">
+        <h3> Projects </h3>
+        <!-- data-bs-ride="false" -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>.IO Style Web Games</b></h4>
+                    <p>
+                      Created, developed, and launched 14 different browser games including <span class="fst-italic">Shotwars.io</span>, <span class="fst-italic">Glork.io</span>, and <span
+                        class="fst-italic">MineParkour.club</span> generating over $15,000 in total revenue.
+                      <br>
+                      Utilized HTML5, CSS, JavaScript, and Node.js to create the games incorperating a custom-built webgame engine that used p2 physics, the HTML5 Canvas API and WebSockets for multiplayer functionality. For the 3D games, I used the Three.js library combined with a custom physics engine designed specifically for capsule physics on a convex surface
+                      <br>
+                      Received sponsorship from AddictingGames.com and partnered with several large portals such as Iogames.space, Crazygames, GameDistribution and Titotu to reach <b>3 million total plays</b>.
+                      <br>
+                      <a href="https://shotwars.io" class="text-highlighted" target="_blank">
+                        Play Shotwars.io here.
+                      </a>
+                    </p>
+
+                  </div>
+                  <div class="p-4 col-lg-5 col-md-7">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <a href="http://shotwars.io" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/shotwars-io-356x200.jpg" class="img-fluid" alt="Shot Wars">
+                          </a>
+                        </div>
+                        <div class="col-md-6">
+                          <a href="http://glork.io" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/glork-io-356x200.jpg" class="img-fluid" alt="Glork.io">
+                          </a>
+                        </div>
+                      </div>
+                    
+                      <div class="row mt-3">
+                        <div class="col-md-6">
+                          <a href="http://minesmashers.club" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/minesmashers-club-356x200.jpg" class="img-fluid" alt="Mine Smashers Club">
+                          </a>
+                        </div>
+                        <div class="col-md-6">
+                          <a href="http://Fallerz.io" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/fallerz-io-356x200.jpg" class="img-fluid" alt="Slither Royale">
+                          </a>
+                        </div>
+                        
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-md-6">
+                          <a href="http://mineparkour.club" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/mineparkour-io-356x200.jpg" class="img-fluid" alt="Mine Parkour Club">
+                          </a>
+                        </div>
+                        <div class="col-md-6">
+                          <a href="http://biplanes.ga" target="_blank">
+                            <img src="https://cdn.titotu.io/images/games/biplanes-io-356x200.jpg" class="img-fluid" alt="Biplanes.ga">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>BlimpServe</b></h4>
+                    <p>
+                      I co-designed a proprietary medicine transport airship drone to cost-effecticely address supply
+                      chain issues, including last-mile locations (difficult-to-reach delivery sites) and cold-chain
+                      transport (handling of temperature-sensitive medicine)
+                      in underserved/impoverished areas.
+                      <br>
+                      <span class="fst-italic">BlimpServe</span> addresses last-mile location challenges by avioiding
+                      costly infrastructure including roads or airports.
+                      Lightweight solar panels were implemented to take advantage of airships' large surface area and
+                      direct view of the sun, improving efficiency and range.
+                      <br>
+                      Cold-chain transport challenges are tackled by harnessing low ambient temperatures at high
+                      altitudes and abundant solar energy.
+                      <br>
+                      A 10-DOF flight controller and vectored thrust propeller were used to control <span
+                        class="fst-italic">BlimpServe</span>.
+                      The most significant techical achievement was the flight-path charting program. The A* algorithm
+                      was used with NOAA wind current data, and path-smoothing was done via gradient descent.
+                      <span class="text-highlighted">Web implementation coming soon!</span>
+                    </p>
+
+                  </div>
+
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <img data-src="blimp_app.png" class="rounded w-100 shadow-1-strong mb-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>Rocket.js</b></h4>
+                    <p>
+                      I developed a high-performance rocket flight simulator for multi-stage, clustered, and air-launched model rocket incorperating data from thrustcurve.org and simulating the rocket's flight using the Euler-Cromer method.
+                      <br>
+                      <span class="fst-italic">Rocket.js</span> approximates complex rocket physics using a discrete time-step approach, where the user can specify the time-step size to trade-off between accuracy and performance. 
+                      It supports several common model rocket engines out of the box and can be extended to support any possible thrust curve. The initial use case of this project was to aid in the design of a <a href="https://media.discordapp.net/attachments/445554232637128716/1193382749176873010/image.png" target="_blank"> balloon-launched rocket </a>, which was successfully launched in 2020. 
+                      It was validated against real-world model rocket flights and was found to have an average error of <span class="fw-bold">less than 5%</span>.
+                    </p>
+
+                  </div>
+
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <img data-src="rocketjs.png" class="rounded w-100 shadow-1-strong mb-4" style="max-width: 80%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>Scout Infinity</b></h4>
+                    <p>
+                      I co-designed an augmented smartphone case using Internet of Things (IoT) technology to improve
+                      the smartphone experience and democratize long-range communication.
+                      <br>
+                      The <span class="fst-italic">Infinity</span> enables by free communication by connecting your
+                      mobile device with the LoRaWAN low-power wide area network (LPWAN) via Bluetooth Low-Energy.
+                      <br>
+                      Additionally, lost phones that have lost power can be geolocated by aggregating
+                      last-collected GPS data from the phone with <span class="fst-italic">Infinity</span>'s own LPWAN
+                      triangulation and 6-DOF sensor data.
+                      <br>
+                      Finally, extremely low-power components/technologies are used, and the case passively charges via
+                      NFC,
+                      so you never need to worry about running out of power.
+                      <br>
+                      <a href="https://centipede5.github.io/scout_infinity/" class="text-highlighted" target="_blank">
+                        Click this link for more info.
+                      </a>
+
+                    </p>
+
+
+                  </div>
+
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <img data-src="scout_works.png"
+                      class="rounded w-100 shadow-1-strong mb-4 .img-fluid. max-width: 50%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <a id="serviceandactivities"></a>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="bg-lb text-dark p-5">
+      <div class="container text-center">
+        <h3> Game: Shotwars.io </h3>
+        <iframe src="https://shotwars.io" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+    <div class="bg-lb text-dark p-5">
+      <div class="container">
+        <h3> Service and Activities </h3>
+        <div class="row">
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>ΔX Fraternity</b></h4>
+            <p>
+
+              Delta Chi is a fraternity that is dedicated to "promoting friendship, developing character, advancing justice, and assisting in the acquisition of a sound education." 
+              As part of Delta Chi, I was in charge of maintaining the safety of events and aiding in the organization’s community service projects and philanthropy events.
+              
+            </p>
+
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>Rutgers University Sailing Team</b></h4>
+            <p>
+              As part of the Rutgers University Sailing Team, I practiced for and participated in regatta sailing competitions for the university, aswell as helping to maintain the team's fleet of boats.
+               
+            </p>
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>Rutgers IEEE</b></h4>
+            <p>
+              As part of Rutgers IEEE, I worked with the ML/AI team to develop machine learning models based on the RNN, LSTM, and transformer architectures. 
+              After learning about the basics of machine learning, and the theory behind the models, I was able to apply my knowledge to real-world problems such as python code generation and stock price prediction.
+            </p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img data-src="italy_group.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="hill_group1.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img data-src="rithesh1.png" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="msc_alot.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img data-src="big_day.webp" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="coffee.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+        </div>
+      </div>
+
+  </section> -->
+
+  <footer>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-4 col-md-6">
+            <p id="copy" class="text-light mb-0">Copyright &copy Calvin Ristad 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</footer>
+
+
+<style>
+  .bg-lb {
+    --bs-bg-opacity: 1;
+    background-color: #5bc2c2 !important;
+  }
+
+  .text-highlighted {
+    color: #7cc;
+    border-color: #5bc2c2;
+  }
+
+  .btn-github {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-linkedin {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-home {
+    color: #7cc;
+    background-color: #212529;
+    border-color: #212529;
+  }
+</style>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 0 50px #333;
+  }
+
+  .gallery-item {
+    width: 73%;
+  }
+
+  .gallery-item>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  img {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  img[data-src] {
+    opacity: 0;
+  }
+</style>
+
+
+<script type='text/javascript'>
+  // write the correct year to the copywrite
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("copy").innerHTML.replace("2024", n);
+  (function () {
+    var elements = document.querySelectorAll('img[data-src]');
+    var index = 0;
+    var lazyLoad = function () {
+      if (index >= elements.length) return;
+      var item = elements[index];
+      if ((this.scrollY + this.innerHeight) > item.offsetTop) {
+        var src = item.getAttribute("data-src");
+        item.src = src;
+        item.addEventListener('load', function () {
+          item.removeAttribute('data-src');
+        });
+        index++;
+        lazyLoad();
+      }
+    };
+    var init = function () {
+      window.addEventListener('scroll', lazyLoad);
+      lazyLoad();
+    };
+    return init();
+  })();  
+</script>
+
+
+<script type='text/javascript'>
+  $(document).ready(function () {
+    $('.carousel').carousel({
+      interval: 10000
+    })
+  });    
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
