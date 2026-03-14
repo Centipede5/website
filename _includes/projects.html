@@ -1,0 +1,51 @@
+<section id="projects" class="section-dark">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Projects</p>
+      <h2 class="mb-0">Selected Builds</h2>
+    </div>
+    <div class="project-stack">
+      {% for project in site.data.projects %}
+        {% assign image_on_left = forloop.index0 | modulo: 2 %}
+        <article class="project-card">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6 {% if image_on_left == 1 %}order-lg-2{% endif %}">
+              {% if project.gallery %}
+                <div class="project-gallery">
+                  {% for item in project.gallery %}
+                    <a class="project-gallery-item" href="{{ item.url }}" target="_blank" rel="noreferrer">
+                      <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async">
+                      <span>{{ item.title }}</span>
+                    </a>
+                  {% endfor %}
+                </div>
+              {% else %}
+                <div class="project-media">
+                  <img
+                    src="{{ project.image.src | relative_url }}"
+                    alt="{{ project.image.alt }}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+              {% endif %}
+            </div>
+            <div class="col-lg-6 {% if image_on_left == 1 %}order-lg-1{% endif %}">
+              <h3 class="h2 mb-3">{{ project.title }}</h3>
+              {% for paragraph in project.description %}
+                {{ paragraph | markdownify }}
+              {% endfor %}
+              {% if project.links %}
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  {% for link in project.links %}
+                    <a class="btn btn-accent" href="{{ link.url }}" target="_blank" rel="noreferrer">{{ link.label }}</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

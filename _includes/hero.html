@@ -1,0 +1,44 @@
+<section class="hero-section section-dark">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-7">
+        <p class="eyebrow">Portfolio</p>
+        <h1 class="display-4 fw-bold mb-3">
+          {{ site.data.site.hero.first_name }}
+          <span class="text-accent">{{ site.data.site.hero.last_name }}</span>
+        </h1>
+        <p class="lead mb-3">{{ site.data.site.hero.subtitle }}</p>
+        <p class="hero-summary mb-4">{{ site.data.site.hero.summary }}</p>
+        <div class="d-flex flex-wrap gap-3">
+          {% for action in site.data.site.hero.actions %}
+            {% assign button_class = 'btn btn-outline-accent' %}
+            {% assign action_href = action.url %}
+            {% assign is_external = false %}
+            {% if action.style == 'primary' %}
+              {% assign button_class = 'btn btn-accent' %}
+            {% elsif action.style == 'secondary' %}
+              {% assign button_class = 'btn btn-accent-soft' %}
+            {% endif %}
+            {% if action.url contains '://' %}
+              {% assign is_external = true %}
+            {% else %}
+              {% assign action_href = action.url | relative_url %}
+            {% endif %}
+            <a class="{{ button_class }}" href="{{ action_href }}" {% if is_external %}target="_blank" rel="noreferrer"{% endif %}>{{ action.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-image-wrapper">
+          <img
+            class="img-fluid hero-image"
+            src="{{ site.data.site.hero.portrait.src | relative_url }}"
+            alt="{{ site.data.site.hero.portrait.alt }}"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

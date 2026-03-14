@@ -1,0 +1,41 @@
+- company: 0NCH41N Games
+  role: Co-Founder and Software Developer
+  image:
+    src: /assets/images/llcgamepng_crop.png
+    alt: LLCGame.io gameplay screenshot
+  links:
+    - label: Visit LLCGame.io
+      url: https://llcgame.io/
+  summary:
+    - Starting in 2021, I co-founded *0NCH41N Games*, a game development company focused on multiplayer Web3 games.
+    - We initially built the yield aggregation system *HellHound.dog*, which used a unique reflection-based design to maximize long-term yield.
+    - In 2023, we launched LLCGame.io, a real-time multiplayer browser game with a decentralized cryptocurrency exchange.
+    - After the beta test, I helped secure more than **$20,000 in grant funding** from Arbitrum, Findora, and Lootchain to fund further development and marketing.
+    - I represented the company in interviews with major ecosystem players such as Polygon and Arbitrum, and later partnered with Scenario to explore generative AI for user-generated content and modding.
+- company: VarietySplash Productions
+  role: Software Engineering Intern
+  image:
+    src: /assets/images/variety_splash_media_cover.jpg
+    alt: VarietySplash Productions cover image
+  links:
+    - label: Visit VarietySplash
+      url: https://varietysplash.com/
+  summary:
+    - During the summer of 2023, I worked as a Software Engineering Intern for [*VarietySplash Productions*](https://varietysplash.com/).
+    - I led an international team of developers working on internal applications that supported digital media production workflows.
+    - My first assignment was a web scraper that helped content creators discover and use internet media efficiently.
+    - After shipping that project ahead of schedule, I managed a three-person team building a crime-mapping app for iOS and Android.
+    - The work included architecture planning, coordination with UI and UX teammates, and continuous iteration with the content team to keep the tools usable and performant.
+- company: Mixed Reality Laboratory
+  role: Research Intern
+  image:
+    src: /assets/images/uic_white.png
+    alt: University of Illinois Chicago logo
+  links:
+    - label: Read the CathSym paper
+      url: https://pubmed.ncbi.nlm.nih.gov/34892308/
+  summary:
+    - During the summer of 2020, I joined the *Mixed Reality Laboratory* at the *University of Illinois Chicago*, an organization focused on applying virtual and augmented reality to medicine.
+    - I worked on *CathSym*, a virtual-reality catheterization trainer designed to improve 3D visualization and haptic feedback.
+    - I built solutions in Unity, learned C#, and worked closely with medical professionals and design researchers to improve the interface.
+    - My largest contribution was redesigning the catheter simulation visuals, which reduced resource usage in Unity Profiler by **more than 40%**.

@@ -1,0 +1,22 @@
+<section id="demo" class="section-light">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">{{ site.data.site.demo.heading }}</p>
+      <h2 class="mb-2">{{ site.data.site.demo.title }}</h2>
+      <p class="section-copy mb-0">{{ site.data.site.demo.description }}</p>
+    </div>
+    <div class="embed-shell">
+      <iframe
+        class="demo-frame"
+        src="{{ site.data.site.demo.embed_url }}"
+        title="{{ site.data.site.demo.title }}"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="embed-note">
+      If the live embed does not load, open
+      <a href="{{ site.data.site.demo.fallback_url }}" target="_blank" rel="noreferrer">{{ site.data.site.demo.title }}</a>.
+    </p>
+  </div>
+</section>

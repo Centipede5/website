@@ -1,0 +1,9 @@
+title: Calvin Ristad
+description: Portfolio and resume for Calvin Ristad.
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - desktop.ini

@@ -1,0 +1,8 @@
+- label: Experience
+  section_id: experience
+- label: Projects
+  section_id: projects
+- label: Demo
+  section_id: demo
+- label: Resume
+  url: /resume.html

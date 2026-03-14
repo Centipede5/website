@@ -1,0 +1,30 @@
+brand_name: Calvin Ristad
+hero:
+  first_name: Calvin
+  last_name: Ristad
+  subtitle: Computer Science major at Rutgers University
+  summary: I build browser games, simulation tools, and applied product prototypes across software, hardware, and research environments.
+  actions:
+    - label: GitHub
+      url: https://github.com/Centipede5
+      style: primary
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/calvin-ristad-195b03183
+      style: secondary
+    - label: Resume
+      url: /resume.html
+      style: outline
+  portrait:
+    src: /assets/images/calvinristad.png
+    alt: Portrait of Calvin Ristad
+resume:
+  pdf_url: /assets/documents/calvin-ristad-resume.pdf
+  preview_url: https://docs.google.com/document/d/1WK-Qtuf0hJYnv9nvWtzElhkX9dDKE1h3w7UiosLewMI/preview
+demo:
+  heading: Game Demo
+  title: Shotwars.io
+  description: Play a live build of Shotwars.io directly from the portfolio site.
+  embed_url: https://shotwars.io
+  fallback_url: https://shotwars.io
+footer:
+  owner: Calvin Ristad

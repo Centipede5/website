@@ -1,0 +1,67 @@
+- title: .IO Style Web Games
+  description:
+    - I created, developed, and launched 14 browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, generating more than $15,000 in total revenue.
+    - The stack combined HTML5, CSS, JavaScript, and Node.js with a custom game engine built on p2 physics, the Canvas API, and WebSockets for multiplayer support.
+    - The 3D titles used Three.js together with a custom physics engine built for capsule movement on convex surfaces.
+    - Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, GameDistribution, and Titotu drove more than **3 million total plays**.
+  links:
+    - label: Play Shotwars.io
+      url: https://shotwars.io
+  gallery:
+    - title: Shotwars.io
+      url: https://shotwars.io
+      image: https://cdn.titotu.io/images/games/shotwars-io-356x200.jpg
+      alt: Shotwars.io promotional image
+    - title: Glork.io
+      url: http://glork.io
+      image: https://cdn.titotu.io/images/games/glork-io-356x200.jpg
+      alt: Glork.io promotional image
+    - title: Mine Smashers Club
+      url: http://minesmashers.club
+      image: https://cdn.titotu.io/images/games/minesmashers-club-356x200.jpg
+      alt: Mine Smashers Club promotional image
+    - title: Fallerz.io
+      url: http://Fallerz.io
+      image: https://cdn.titotu.io/images/games/fallerz-io-356x200.jpg
+      alt: Fallerz.io promotional image
+    - title: Mine Parkour Club
+      url: http://mineparkour.club
+      image: https://cdn.titotu.io/images/games/mineparkour-io-356x200.jpg
+      alt: Mine Parkour Club promotional image
+    - title: Biplanes.ga
+      url: http://biplanes.ga
+      image: https://cdn.titotu.io/images/games/biplanes-io-356x200.jpg
+      alt: Biplanes.ga promotional image
+- title: BlimpServe
+  image:
+    src: /assets/images/blimp_app.png
+    alt: BlimpServe application interface
+  description:
+    - I co-designed a proprietary medicine-transport airship drone to address supply chain issues in underserved and hard-to-reach locations.
+    - *BlimpServe* avoids the infrastructure requirements of roads and airports while using lightweight solar panels to extend range and improve efficiency.
+    - The system also tackled cold-chain transport by using low ambient temperatures at altitude together with abundant solar energy.
+    - A 10-DOF flight controller and vectored thrust propeller controlled the craft, while the flight-path planner used NOAA wind-current data, A* search, and gradient-descent path smoothing.
+- title: Rocket.js
+  image:
+    src: /assets/images/rocketjs.png
+    alt: Rocket.js simulator visualization
+  links:
+    - label: View launch image
+      url: https://media.discordapp.net/attachments/445554232637128716/1193382749176873010/image.png
+  description:
+    - I built a high-performance rocket flight simulator for multi-stage, clustered, and air-launched model rockets using thrust data from thrustcurve.org.
+    - The simulator uses the Euler-Cromer method and a configurable time step so users can trade accuracy for performance.
+    - It was initially developed to support the design of a balloon-launched rocket that was successfully launched in 2020.
+    - Validation against real-world flights showed an average error of **less than 5%**.
+- title: Scout Infinity
+  image:
+    src: /assets/images/scout_works.png
+    alt: Scout Infinity concept diagram
+  links:
+    - label: Learn more
+      url: https://centipede5.github.io/scout_infinity/
+  description:
+    - I co-designed an augmented smartphone case using Internet of Things technology to improve the mobile experience and democratize long-range communication.
+    - The *Infinity* case connects phones to the LoRaWAN low-power wide-area network over Bluetooth Low Energy.
+    - Lost devices can be geolocated by combining the phone's last GPS data with the case's own LPWAN triangulation and six-degree-of-freedom sensor data.
+    - Ultra-low-power components and passive NFC charging help the device operate without adding daily charging friction.

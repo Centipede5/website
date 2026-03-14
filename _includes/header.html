@@ -1,0 +1,27 @@
+{% assign is_home = page.url == '/' %}
+<nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="{{ '/' | relative_url }}">{{ site.data.site.brand_name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        {% for item in site.data.navigation %}
+          {% if item.section_id %}
+            {% if is_home %}
+              {% assign href = '#' | append: item.section_id %}
+            {% else %}
+              {% assign href = '/' | relative_url | append: '#' | append: item.section_id %}
+            {% endif %}
+          {% else %}
+            {% assign href = item.url | relative_url %}
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ href }}">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
