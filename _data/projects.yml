@@ -1,3 +1,14 @@
+- title: Macros.cheap
+  image:
+    src: https://macros.cheap/images/meta-tags.png
+    alt: Macros.cheap web application interface
+  links:
+    - label: Visit macros.cheap
+      url: https://macros.cheap
+  description:
+    - I developed *Macros.cheap*, a Mathematical Macronutrient Cost Optimizer that helps users optimize their nutrition while minimizing grocery costs.
+    - The budget-friendly web application is designed to help users shop effortlessly by generating smart, affordable meal plans.
+    - "The core philosophy is simple: Eat well, spend less!"
 - title: .IO Style Web Games
   description:
     - I created, developed, and launched 14 browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, generating more than $15,000 in total revenue.
@@ -32,22 +43,33 @@
       url: http://biplanes.ga
       image: https://cdn.titotu.io/images/games/biplanes-io-356x200.jpg
       alt: Biplanes.ga promotional image
+- title: Insanegames.io
+  image:
+    src: /assets/images/insanegames.png
+    alt: Insanegames.io webgame portal
+  description:
+    - A webgame portal that had over 100,000 views per week at the time of sale.
+    - Implemented proxies, automated game submissions, anti-spam / anti-bot measures, and provided game developers login/chat/storage APIs.
+- title: Sports Analytics
+  image:
+    src: /assets/images/cassis.png
+    alt: CASSIS logo
+  description:
+    - Built a linear programming based system to optimize high school swimming lineups.
+    - Presented work at the Cascadia Symposium on Statistics in Sports (2024).
 - title: BlimpServe
   image:
     src: /assets/images/blimp_app.png
     alt: BlimpServe application interface
   description:
     - I co-designed a proprietary medicine-transport airship drone to address supply chain issues in underserved and hard-to-reach locations.
-    - *BlimpServe* avoids the infrastructure requirements of roads and airports while using lightweight solar panels to extend range and improve efficiency.
+    - "*BlimpServe* avoids the infrastructure requirements of roads and airports while using lightweight solar panels to extend range and improve efficiency."
     - The system also tackled cold-chain transport by using low ambient temperatures at altitude together with abundant solar energy.
     - A 10-DOF flight controller and vectored thrust propeller controlled the craft, while the flight-path planner used NOAA wind-current data, A* search, and gradient-descent path smoothing.
 - title: Rocket.js
   image:
     src: /assets/images/rocketjs.png
     alt: Rocket.js simulator visualization
-  links:
-    - label: View launch image
-      url: https://media.discordapp.net/attachments/445554232637128716/1193382749176873010/image.png
   description:
     - I built a high-performance rocket flight simulator for multi-stage, clustered, and air-launched model rockets using thrust data from thrustcurve.org.
     - The simulator uses the Euler-Cromer method and a configurable time step so users can trade accuracy for performance.

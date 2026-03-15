@@ -1,33 +1,41 @@
 <section id="experience" class="section-light">
   <div class="container">
-    <div class="section-heading">
+    <div class="section-heading reveal">
       <p class="eyebrow">Experience</p>
       <h2 class="mb-0">Work and Research</h2>
     </div>
     <div class="row g-4">
       {% for item in site.data.experience %}
-        <div class="col-lg-4">
-          <article class="content-card h-100">
-            <img
-              class="content-card-image"
-              src="{{ item.image.src | relative_url }}"
-              alt="{{ item.image.alt }}"
-              loading="lazy"
-              decoding="async"
-            >
-            <div class="content-card-body">
-              <h3 class="h4 mb-1">{{ item.company }}</h3>
-              <p class="text-muted fw-semibold mb-3">{{ item.role }}</p>
-              {% for paragraph in item.summary %}
-                {{ paragraph | markdownify }}
-              {% endfor %}
-              {% if item.links %}
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  {% for link in item.links %}
-                    <a class="btn btn-sm btn-outline-dark" href="{{ link.url }}" target="_blank" rel="noreferrer">{{ link.label }}</a>
-                  {% endfor %}
-                </div>
+        <div class="col-12 reveal" style="transition-delay: 0.1s;">
+          <article class="content-card">
+            <div class="row g-0 align-items-center">
+              {% if item.image %}
+              <div class="col-lg-4">
+                <img
+                  class="content-card-image content-card-image-horizontal"
+                  src="{{ item.image.src | relative_url }}"
+                  alt="{{ item.image.alt }}"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
               {% endif %}
+              <div class="{% if item.image %}col-lg-8{% else %}col-12{% endif %}">
+                <div class="content-card-body">
+                  <h3 class="h4 mb-1">{{ item.company }}</h3>
+                  <p class="text-muted fw-semibold mb-3">{{ item.role }}</p>
+                  {% for paragraph in item.summary %}
+                    {{ paragraph | markdownify }}
+                  {% endfor %}
+                  {% if item.links %}
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                      {% for link in item.links %}
+                        <a class="btn btn-sm btn-outline-dark" href="{{ link.url }}" target="_blank" rel="noreferrer">{{ link.label }}</a>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
             </div>
           </article>
         </div>

@@ -1,7 +1,7 @@
 <section class="hero-section section-dark">
   <div class="container">
     <div class="row align-items-center gy-4">
-      <div class="col-lg-7">
+      <div class="col-lg-7 reveal">
         <p class="eyebrow">Portfolio</p>
         <h1 class="display-4 fw-bold mb-3">
           {{ site.data.site.hero.first_name }}
@@ -11,24 +11,38 @@
         <p class="hero-summary mb-4">{{ site.data.site.hero.summary }}</p>
         <div class="d-flex flex-wrap gap-3">
           {% for action in site.data.site.hero.actions %}
-            {% assign button_class = 'btn btn-outline-accent' %}
+            {% assign button_class = 'btn btn-outline-accent d-inline-flex align-items-center gap-2' %}
             {% assign action_href = action.url %}
             {% assign is_external = false %}
-            {% if action.style == 'primary' %}
-              {% assign button_class = 'btn btn-accent' %}
-            {% elsif action.style == 'secondary' %}
-              {% assign button_class = 'btn btn-accent-soft' %}
+            {% assign icon_class = '' %}
+            
+            {% if action.label == 'GitHub' %}
+              {% assign icon_class = 'fa-brands fa-github' %}
+            {% elsif action.label == 'LinkedIn' %}
+              {% assign icon_class = 'fa-brands fa-linkedin' %}
+            {% elsif action.label == 'Resume' %}
+              {% assign icon_class = 'fa-solid fa-file-pdf' %}
             {% endif %}
+
+            {% if action.style == 'primary' %}
+              {% assign button_class = 'btn btn-accent d-inline-flex align-items-center gap-2' %}
+            {% elsif action.style == 'secondary' %}
+              {% assign button_class = 'btn btn-accent-soft d-inline-flex align-items-center gap-2' %}
+            {% endif %}
+            
             {% if action.url contains '://' %}
               {% assign is_external = true %}
             {% else %}
               {% assign action_href = action.url | relative_url %}
             {% endif %}
-            <a class="{{ button_class }}" href="{{ action_href }}" {% if is_external %}target="_blank" rel="noreferrer"{% endif %}>{{ action.label }}</a>
+            <a class="{{ button_class }}" href="{{ action_href }}" {% if is_external %}target="_blank" rel="noreferrer"{% endif %}>
+              {% if icon_class != '' %}<i class="{{ icon_class }} fs-5"></i>{% endif %}
+              {{ action.label }}
+            </a>
           {% endfor %}
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 reveal" style="transition-delay: 0.2s;">
         <div class="hero-image-wrapper">
           <img
             class="img-fluid hero-image"

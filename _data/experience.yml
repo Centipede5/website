@@ -1,3 +1,13 @@
+- company: Johnson & Johnson
+  image:
+    src: /assets/images/jnj.png
+    alt: Johnson & Johnson logo
+  role: Process Science Modeling and Data Co-Op
+  summary:
+    - Sped up app development in my team by creating a new Python application framework and UI component library using Jinja and Flask.
+    - Centralized all site-to-site tech transfer data within J&J into a single application, allowing users to view technologies used and connect with relevant in-house experts.
+    - Developed a cell growth model using filterpy unscented Kalman filters that outperformed traditional machine learning models for prediction accuracy and interpretability.
+    - Led the 28-person intern community within my group; organized guest speakers to share career insights.
 - company: 0NCH41N Games
   role: Co-Founder and Software Developer
   image:
@@ -12,20 +22,6 @@
     - In 2023, we launched LLCGame.io, a real-time multiplayer browser game with a decentralized cryptocurrency exchange.
     - After the beta test, I helped secure more than **$20,000 in grant funding** from Arbitrum, Findora, and Lootchain to fund further development and marketing.
     - I represented the company in interviews with major ecosystem players such as Polygon and Arbitrum, and later partnered with Scenario to explore generative AI for user-generated content and modding.
-- company: VarietySplash Productions
-  role: Software Engineering Intern
-  image:
-    src: /assets/images/variety_splash_media_cover.jpg
-    alt: VarietySplash Productions cover image
-  links:
-    - label: Visit VarietySplash
-      url: https://varietysplash.com/
-  summary:
-    - During the summer of 2023, I worked as a Software Engineering Intern for [*VarietySplash Productions*](https://varietysplash.com/).
-    - I led an international team of developers working on internal applications that supported digital media production workflows.
-    - My first assignment was a web scraper that helped content creators discover and use internet media efficiently.
-    - After shipping that project ahead of schedule, I managed a three-person team building a crime-mapping app for iOS and Android.
-    - The work included architecture planning, coordination with UI and UX teammates, and continuous iteration with the content team to keep the tools usable and performant.
 - company: Mixed Reality Laboratory
   role: Research Intern
   image:

@@ -1,15 +1,15 @@
 <section class="section-dark page-section">
-  <div class="container">
+  <div class="container reveal">
     <div class="section-heading">
       <p class="eyebrow">Resume</p>
       <h1 class="mb-2">Resume and Download</h1>
       <p class="section-copy mb-0">Use the embedded preview below or download the PDF directly.</p>
     </div>
-    <div class="d-flex flex-wrap gap-3 mb-4">
+    <div class="d-flex flex-wrap gap-3 mb-4 reveal" style="transition-delay: 0.1s;">
       <a class="btn btn-accent" href="{{ site.data.site.resume.pdf_url | relative_url }}" target="_blank" rel="noreferrer">Download PDF</a>
       <a class="btn btn-outline-accent" href="{{ site.data.site.resume.preview_url }}" target="_blank" rel="noreferrer">Open Google Docs Preview</a>
     </div>
-    <div class="embed-shell">
+    <div class="embed-shell reveal" style="transition-delay: 0.2s;">
       <iframe
         class="resume-frame"
         src="{{ site.data.site.resume.preview_url }}"

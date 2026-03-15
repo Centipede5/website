@@ -2,8 +2,8 @@ brand_name: Calvin Ristad
 hero:
   first_name: Calvin
   last_name: Ristad
-  subtitle: Computer Science major at Rutgers University
-  summary: I build browser games, simulation tools, and applied product prototypes across software, hardware, and research environments.
+  subtitle: AI and Software Engineer
+  summary: I build AI agents, browser games, simulation tools, and applied product prototypes across software, hardware, and research environments.
   actions:
     - label: GitHub
       url: https://github.com/Centipede5

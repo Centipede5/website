@@ -1,14 +1,15 @@
 <section id="projects" class="section-dark">
   <div class="container">
-    <div class="section-heading">
+    <div class="section-heading reveal">
       <p class="eyebrow">Projects</p>
       <h2 class="mb-0">Selected Builds</h2>
     </div>
     <div class="project-stack">
       {% for project in site.data.projects %}
         {% assign image_on_left = forloop.index0 | modulo: 2 %}
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="row g-4 align-items-center">
+            {% if project.gallery or project.image %}
             <div class="col-lg-6 {% if image_on_left == 1 %}order-lg-2{% endif %}">
               {% if project.gallery %}
                 <div class="project-gallery">
@@ -30,7 +31,8 @@
                 </div>
               {% endif %}
             </div>
-            <div class="col-lg-6 {% if image_on_left == 1 %}order-lg-1{% endif %}">
+            {% endif %}
+            <div class="{% if project.gallery or project.image %}col-lg-6{% else %}col-12{% endif %} {% if project.gallery or project.image %}{% if image_on_left == 1 %}order-lg-1{% endif %}{% endif %}">
               <h3 class="h2 mb-3">{{ project.title }}</h3>
               {% for paragraph in project.description %}
                 {{ paragraph | markdownify }}
