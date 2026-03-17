@@ -9,127 +9,50 @@
         </h1>
         <p class="lead mb-3">{{ site.data.site.hero.subtitle }}</p>
         <p class="hero-summary mb-4">{{ site.data.site.hero.summary }}</p>
-
-        <div class="hero-chatbox-container">
-          <div class="hero-chatbox">
-            <i class="fa-solid fa-terminal text-accent fs-5 ms-3 pt-1"></i>
-            <input type="text" id="hero-chat-input" class="hero-chat-input" placeholder="Ask me anything..." autocomplete="off">
-            <button class="btn btn-accent rounded-circle p-0 mx-1 d-flex align-items-center justify-content-center hero-chat-submit" aria-label="Submit">
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </div>
-        </div>
-
         <div class="d-flex flex-wrap gap-3">
           {% for action in site.data.site.hero.actions %}
-          {% assign button_class = 'btn btn-outline-accent d-inline-flex align-items-center gap-2' %}
-          {% assign action_href = action.url %}
-          {% assign is_external = false %}
-          {% assign icon_class = '' %}
+            {% assign button_class = 'btn btn-outline-accent d-inline-flex align-items-center gap-2' %}
+            {% assign action_href = action.url %}
+            {% assign is_external = false %}
+            {% assign icon_class = '' %}
+            
+            {% if action.label == 'GitHub' %}
+              {% assign icon_class = 'fa-brands fa-github' %}
+            {% elsif action.label == 'LinkedIn' %}
+              {% assign icon_class = 'fa-brands fa-linkedin' %}
+            {% elsif action.label == 'Resume' %}
+              {% assign icon_class = 'fa-solid fa-file-pdf' %}
+            {% endif %}
 
-          {% if action.label == 'GitHub' %}
-          {% assign icon_class = 'fa-brands fa-github' %}
-          {% elsif action.label == 'LinkedIn' %}
-          {% assign icon_class = 'fa-brands fa-linkedin' %}
-          {% elsif action.label == 'Resume' %}
-          {% assign icon_class = 'fa-solid fa-file-pdf' %}
-          {% endif %}
-
-          {% if action.style == 'primary' %}
-          {% assign button_class = 'btn btn-accent d-inline-flex align-items-center gap-2' %}
-          {% elsif action.style == 'secondary' %}
-          {% assign button_class = 'btn btn-accent-soft d-inline-flex align-items-center gap-2' %}
-          {% endif %}
-
-          {% if action.url contains '://' %}
-          {% assign is_external = true %}
-          {% else %}
-          {% assign action_href = action.url | relative_url %}
-          {% endif %}
-          <a class="{{ button_class }}" href="{{ action_href }}" {% if is_external %}target="_blank" rel="noreferrer" {%
-            endif %}>
-            {% if icon_class != '' %}<i class="{{ icon_class }} fs-5"></i>{% endif %}
-            {{ action.label }}
-          </a>
+            {% if action.style == 'primary' %}
+              {% assign button_class = 'btn btn-accent d-inline-flex align-items-center gap-2' %}
+            {% elsif action.style == 'secondary' %}
+              {% assign button_class = 'btn btn-accent-soft d-inline-flex align-items-center gap-2' %}
+            {% endif %}
+            
+            {% if action.url contains '://' %}
+              {% assign is_external = true %}
+            {% else %}
+              {% assign action_href = action.url | relative_url %}
+            {% endif %}
+            <a class="{{ button_class }}" href="{{ action_href }}" {% if is_external %}target="_blank" rel="noreferrer"{% endif %}>
+              {% if icon_class != '' %}<i class="{{ icon_class }} fs-5"></i>{% endif %}
+              {{ action.label }}
+            </a>
           {% endfor %}
         </div>
       </div>
       <div class="col-lg-5 reveal" style="transition-delay: 0.2s;">
         <div class="hero-image-wrapper">
-          <img class="img-fluid hero-image" src="{{ site.data.site.hero.portrait.src | relative_url }}"
-            alt="{{ site.data.site.hero.portrait.alt }}" loading="eager" decoding="async">
+          <img
+            class="img-fluid hero-image"
+            src="{{ site.data.site.hero.portrait.src | relative_url }}"
+            alt="{{ site.data.site.hero.portrait.alt }}"
+            loading="eager"
+            decoding="async"
+          >
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const input = document.getElementById('hero-chat-input');
-  if (!input) return;
-
-  const questions = [
-    "What kind of web apps can you build?",
-    "Can you integrate AI into my project?",
-    "How do you optimize system performance?",
-    "Tell me about your experience with embedded systems.",
-    "Can you handle complex mathematical optimization?",
-    "How do you approach UI/UX design for new projects?"
-  ];
-
-  let currentQuestionIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  
-  // Timing parameters
-  const typingDelay = 40;
-  const deletingDelay = 20;
-  const pauseBeforeDelete = 2000;
-  const pauseBeforeType = 1000;
-
-  let cursorBlinkState = true;
-  let isWaiting = false;
-
-  function typeEffect() {
-    const currentQuestion = questions[currentQuestionIndex];
-    let delay = isDeleting ? deletingDelay : typingDelay;
-    
-    // Toggle cursor faster when waiting
-    if (isWaiting) {
-      cursorBlinkState = !cursorBlinkState;
-      input.placeholder = currentQuestion + (cursorBlinkState ? "|" : "");
-      setTimeout(typeEffect, 500);
-      return;
-    }
-
-    if (isDeleting) {
-      input.placeholder = currentQuestion.substring(0, charIndex - 1) + "|";
-      charIndex--;
-    } else {
-      input.placeholder = currentQuestion.substring(0, charIndex + 1) + "|";
-      charIndex++;
-    }
-
-    if (!isDeleting && charIndex === currentQuestion.length) {
-      isWaiting = true;
-      isDeleting = true;
-      delay = pauseBeforeDelete;
-      setTimeout(() => { isWaiting = false; typeEffect(); }, delay);
-      return;
-    } else if (isDeleting && charIndex === 0) {
-      isWaiting = true;
-      isDeleting = false;
-      currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
-      delay = pauseBeforeType;
-      setTimeout(() => { isWaiting = false; typeEffect(); }, delay);
-      return;
-    }
-
-    setTimeout(typeEffect, delay);
-  }
-
-  // Start the effect
-  setTimeout(typeEffect, pauseBeforeType);
-});
-</script>
