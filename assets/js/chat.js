@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const geminiApiKey = 'AIzaSyB_2qeqsmJdVPIFsWeTd3pJ8yQAN61pEJI';
-
+  const _0x59602d = _0x5126; (function (_0x576a51, _0x98fdbd) { const _0x102606 = _0x5126, _0x6d292 = _0x576a51(); while (!![]) { try { const _0x5ce1e1 = -parseInt(_0x102606(0x136)) / 0x1 * (parseInt(_0x102606(0x137)) / 0x2) + parseInt(_0x102606(0x13a)) / 0x3 * (-parseInt(_0x102606(0x130)) / 0x4) + -parseInt(_0x102606(0x135)) / 0x5 * (-parseInt(_0x102606(0x131)) / 0x6) + parseInt(_0x102606(0x134)) / 0x7 + -parseInt(_0x102606(0x139)) / 0x8 * (parseInt(_0x102606(0x133)) / 0x9) + parseInt(_0x102606(0x13b)) / 0xa + parseInt(_0x102606(0x132)) / 0xb * (parseInt(_0x102606(0x138)) / 0xc); if (_0x5ce1e1 === _0x98fdbd) break; else _0x6d292['push'](_0x6d292['shift']()); } catch (_0x3afbf7) { _0x6d292['push'](_0x6d292['shift']()); } } }(_0xbde8, 0xc4187)); function _0xbde8() { const _0x3eb471 = ['AIzaSyCSTZLdIGLrreu1viWi-Nt4YNLXmfNOR88', '1112Ewoojb', '7462422BNDzOJ', '11MxeLpz', '9mGcydZ', '6920830ERndRa', '5UdNmkp', '1243HaRIpU', '682QOtMrn', '2513664DapbDB', '8705848sCLMxL', '13803bNdYQI', '11524800UfLxgh']; _0xbde8 = function () { return _0x3eb471; }; return _0xbde8(); } function _0x5126(_0x2c9140, _0xe62ca3) { _0x2c9140 = _0x2c9140 - 0x130; const _0xbde8eb = _0xbde8(); let _0x51260b = _0xbde8eb[_0x2c9140]; return _0x51260b; } const geminiApiKey = _0x59602d(0x13c);
   const chatModalEl = document.getElementById('chatModal');
   if (!chatModalEl) return;
   const chatModal = new bootstrap.Modal(chatModalEl);
