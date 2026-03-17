@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-  (function (_0x317bcf, _0x29879a) { const _0x34a0f3 = _0x2eef, _0xc4ac1 = _0x317bcf(); while (!![]) { try { const _0x5f3839 = -parseInt(_0x34a0f3(0x145)) / 0x1 * (parseInt(_0x34a0f3(0x143)) / 0x2) + parseInt(_0x34a0f3(0x144)) / 0x3 + -parseInt(_0x34a0f3(0x142)) / 0x4 + parseInt(_0x34a0f3(0x146)) / 0x5 * (-parseInt(_0x34a0f3(0x13d)) / 0x6) + parseInt(_0x34a0f3(0x147)) / 0x7 * (parseInt(_0x34a0f3(0x13f)) / 0x8) + -parseInt(_0x34a0f3(0x141)) / 0x9 + -parseInt(_0x34a0f3(0x13e)) / 0xa * (-parseInt(_0x34a0f3(0x140)) / 0xb); if (_0x5f3839 === _0x29879a) break; else _0xc4ac1['push'](_0xc4ac1['shift']()); } catch (_0x64a876) { _0xc4ac1['push'](_0xc4ac1['shift']()); } } }(_0x1d41, 0x57356)); const geminiApiKey = 'AIzaSyBYjmmlNJL4Bp-JwHq8f84d4-Sp7YFrR7c'; function _0x2eef(_0x5e82a7, _0x1bdee7) { _0x5e82a7 = _0x5e82a7 - 0x13d; const _0x1d41ee = _0x1d41(); let _0x2eef8b = _0x1d41ee[_0x5e82a7]; return _0x2eef8b; } function _0x1d41() { const _0x5bbe00 = ['6GEdUvx', '1790ERqsNJ', '8RVWwoH', '62414phvBke', '4228533WXwCQy', '774268GCWWzp', '182PUuWEi', '1712532uereXS', '7816bVpVuX', '650365seLKLo', '1928143sRBcnt']; _0x1d41 = function () { return _0x5bbe00; }; return _0x1d41(); }
+  const workerUrl = 'https://llm-api-worker.calvin5742.workers.dev';
 
   const chatModalEl = document.getElementById('chatModal');
   if (!chatModalEl) return;
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let messages = [];
 
   async function streamGeminiAPI(userQuery, onUpdate) {
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse&key=${geminiApiKey}`;
+    const endpoint = workerUrl;
 
     const conversationHistory = messages.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.content}`).join('\n');
 
