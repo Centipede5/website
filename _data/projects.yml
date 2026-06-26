@@ -7,23 +7,34 @@
       url: https://vertexbuilder.ai
   description:
     - I developed *Vertex Builder*, an x402 powered agentic marketplace that allows both humans and AI to purchase data and services using the x402 payment protocol. 
+- title: OurFreePantry.org
+  description:
+    - Created a free app to help people find free food near them tailored to their cultural and dietary needs.
+    - Uses a visual language model to infer pantry inventories from uploaded pictures and Firebase to maintain those inventories.
 - title: Macros.cheap
   image:
-    src: https://macros.cheap/images/meta-tags.png
+    src: https://centipede5.github.io/macros_cheap/images/meta-tags.png
     alt: Macros.cheap web application interface
   links:
     - label: Visit macros.cheap
-      url: https://macros.cheap
+      url: https://centipede5.github.io/macros_cheap/
   description:
     - I developed *Macros.cheap*, a Mathematical Macronutrient Cost Optimizer that helps users optimize their nutrition while minimizing grocery costs.
-    - The budget-friendly web application is designed to help users shop effortlessly by generating smart, affordable meal plans.
+    - Built the optimizer with GLPK and WASM so users can turn nutrition targets and grocery prices into budget-aware meal plans.
     - "The core philosophy is simple: Eat well, spend less!"
+- title: Data Visualization
+  image:
+    src: /assets/images/variety_splash_media_cover.jpg
+    alt: VarietySplash production data visualization
+  description:
+    - Built a scalable, high-performance web crawler and GUI for VarietySplash productions using Electron.js.
+    - Created additional visualization apps for Wawa service maps, Rutgers bus arrivals, restaurant wait times, and a FrameNet explorer.
 - title: .IO Style Web Games
   description:
-    - I created, developed, and launched 14 browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, generating more than $15,000 in total revenue.
+    - I created, developed, and launched 14 multiplayer browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, accumulating more than **6 million total plays**.
     - The stack combined HTML5, CSS, JavaScript, and Node.js with a custom game engine built on p2 physics, the Canvas API, and WebSockets for multiplayer support.
     - The 3D titles used Three.js together with a custom physics engine built for capsule movement on convex surfaces.
-    - Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, GameDistribution, and Titotu drove more than **3 million total plays**.
+    - Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, GameDistribution, and Titotu helped drive the games to public audiences.
   links:
     - label: Play Shotwars.io
       url: https://shotwars.io
@@ -57,8 +68,9 @@
     src: /assets/images/insanegames.png
     alt: Insanegames.io webgame portal
   description:
-    - A webgame portal that had over 100,000 views per week at the time of sale.
-    - Implemented proxies, automated game submissions, anti-spam / anti-bot measures, and provided game developers login/chat/storage APIs.
+    - Designed and implemented a web game portal with a streamlined submission and review pipeline.
+    - Managed cloud hosting, database, Google Analytics, API maintenance, proxies, anti-spam / anti-bot measures, and developer login/chat/storage APIs.
+    - At the time of sale, the portal had more than 100,000 views per week.
 - title: Sports Analytics
   image:
     src: /assets/images/cassis.png
@@ -66,6 +78,7 @@
   description:
     - Built a linear programming based system to optimize high school swimming lineups.
     - Presented work at the Cascadia Symposium on Statistics in Sports (2024).
+    - Developed a Bayesian approach to ranking elite youth triathletes that greatly outperformed the USAT points system.
 - title: BlimpServe
   image:
     src: /assets/images/blimp_app.png

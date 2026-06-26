@@ -1,4 +1,4 @@
-# Calvin Ristad - Software and AI Engineer
+# Calvin Ristad - Application Developer and Software Engineer
 
 > This file provides an LLM-friendly overview of my portfolio and background.
 
@@ -6,9 +6,9 @@ Portfolio
 
 # Calvin Ristad
 
-Software and AI Engineer
+Application Developer and Software Engineer
 
-I build browser games, simulation tools, and applied product prototypes across software, hardware, and research environments.
+I build dashboarding, workflow automation, AI extraction, data visualization, and browser game systems across software, manufacturing, and public-interest products.
 
 [GitHub](https://github.com/Centipede5)
 [LinkedIn](https://www.linkedin.com/in/calvin-ristad-195b03183)
@@ -24,33 +24,31 @@ Experience
 
 ### Johnson & Johnson
 
+Software Engineering Contractor - Application Development
+
+Developing a web interface for the MARCH centralized model archival and retrieval system, including role-based access control, version-controlled model storage, and model exploration tools.
+
+Building a Dockerized Python web app that retrieves manufacturing data from Databricks and automatically generates editable model maintenance reports with charts, statistical analyses, and narrative summaries.
+
+Built a guardrailed GenAI agent to extract structured data from handwritten paper batch records with 1/20th the error of Copilot alone, plus a companion review app that sped up human review versus manual extraction.
+
+Extended the internal application framework built during my Co-Op with interactive documentation, Jenkins CI/CD integration, Databricks/Teradata connections, FastAPI support, and HTMX interactivity.
+
+Built and deployed tools for device design-space search, filter adsorption modeling, MSAT pathmapping, and intensified perfusion process monitoring.
+
+![Johnson & Johnson logo](/assets/images/jnj.png)
+
+### Johnson & Johnson
+
 Process Science Modeling and Data Co-Op
 
-Sped up app development in my team by creating a new Python application framework and UI component library using Jinja and Flask.
+Sped up app development in my team by creating a new Python application framework and J&J brand-compliant UI component library using Jinja and Flask.
 
 Centralized all site-to-site tech transfer data within J&J into a single application, allowing users to view technologies used and connect with relevant in-house experts.
 
-Developed a cell growth model using filterpy unscented Kalman filters that outperformed traditional machine learning models for prediction accuracy and interpretability.
+Implemented a mechanistic cell growth model using FilterPy unscented Kalman filters that outperformed linear regression, XGBoost, CART, and SVM for prediction accuracy on trial data.
 
 Led the 28-person intern community within my group; organized guest speakers to share career insights.
-
-![LLCGame.io gameplay screenshot](/assets/images/llcgamepng_crop.png)
-
-### 0NCH41N Games
-
-Co-Founder and Software Developer
-
-Starting in 2021, I co-founded *0NCH41N Games*, a game development company focused on multiplayer Web3 games.
-
-We initially built the yield aggregation system *HellHound.dog*, which used a unique reflection-based design to maximize long-term yield.
-
-In 2023, we launched LLCGame.io, a real-time multiplayer browser game with a decentralized cryptocurrency exchange.
-
-After the beta test, I helped secure more than **$20,000 in grant funding** from Arbitrum, Findora, and Lootchain to fund further development and marketing.
-
-I represented the company in interviews with major ecosystem players such as Polygon and Arbitrum, and later partnered with Scenario to explore generative AI for user-generated content and modding.
-
-[Visit LLCGame.io](https://llcgame.io/)
 
 ![University of Illinois Chicago logo](/assets/images/uic_white.png)
 
@@ -72,17 +70,39 @@ Projects
 
 ## Selected Builds
 
-![Macros.cheap web application interface](https://macros.cheap/images/meta-tags.png)
+![Vertex Builder](/assets/images/vertexbuilder.png)
+
+### Vertex Builder
+
+I developed *Vertex Builder*, an x402 powered agentic marketplace that allows both humans and AI to purchase data and services using the x402 payment protocol.
+
+[Visit vertexbuilder.ai](https://vertexbuilder.ai)
+
+### OurFreePantry.org
+
+Created a free app to help people find free food near them tailored to their cultural and dietary needs.
+
+Uses a visual language model to infer pantry inventories from uploaded pictures and Firebase to maintain those inventories.
+
+![Macros.cheap web application interface](https://centipede5.github.io/macros_cheap/images/meta-tags.png)
 
 ### Macros.cheap
 
 I developed *Macros.cheap*, a Mathematical Macronutrient Cost Optimizer that helps users optimize their nutrition while minimizing grocery costs.
 
-The budget-friendly web application is designed to help users shop effortlessly by generating smart, affordable meal plans.
+Built the optimizer with GLPK and WASM so users can turn nutrition targets and grocery prices into budget-aware meal plans.
 
 The core philosophy is simple: Eat well, spend less!
 
-[Visit macros.cheap](https://macros.cheap)
+[Visit macros.cheap](https://centipede5.github.io/macros_cheap/)
+
+![VarietySplash production data visualization](/assets/images/variety_splash_media_cover.jpg)
+
+### Data Visualization
+
+Built a scalable, high-performance web crawler and GUI for VarietySplash productions using Electron.js.
+
+Created additional visualization apps for Wawa service maps, Rutgers bus arrivals, restaurant wait times, and a FrameNet explorer.
 
 [![Shotwars.io promotional image](https://cdn.titotu.io/images/games/shotwars-io-356x200.jpg)
 Shotwars.io](https://shotwars.io)
@@ -99,13 +119,13 @@ Biplanes.ga](http://biplanes.ga)
 
 ### .IO Style Web Games
 
-I created, developed, and launched 14 browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, generating more than $15,000 in total revenue.
+I created, developed, and launched 14 multiplayer browser games, including *Shotwars.io*, *Glork.io*, and *MineParkour.club*, accumulating more than **6 million total plays**.
 
 The stack combined HTML5, CSS, JavaScript, and Node.js with a custom game engine built on p2 physics, the Canvas API, and WebSockets for multiplayer support.
 
 The 3D titles used Three.js together with a custom physics engine built for capsule movement on convex surfaces.
 
-Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, GameDistribution, and Titotu drove more than **3 million total plays**.
+Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, GameDistribution, and Titotu helped drive the games to public audiences.
 
 [Play Shotwars.io](https://shotwars.io)
 
@@ -113,9 +133,11 @@ Distribution partnerships with AddictingGames.com, Iogames.space, CrazyGames, Ga
 
 ### Insanegames.io
 
-A webgame portal that had over 100,000 views per week at the time of sale.
+Designed and implemented a web game portal with a streamlined submission and review pipeline.
 
-Implemented proxies, automated game submissions, anti-spam / anti-bot measures, and provided game developers login/chat/storage APIs.
+Managed cloud hosting, database, Google Analytics, API maintenance, proxies, anti-spam / anti-bot measures, and developer login/chat/storage APIs.
+
+At the time of sale, the portal had more than 100,000 views per week.
 
 ![CASSIS logo](/assets/images/cassis.png)
 
@@ -124,6 +146,8 @@ Implemented proxies, automated game submissions, anti-spam / anti-bot measures, 
 Built a linear programming based system to optimize high school swimming lineups.
 
 Presented work at the Cascadia Symposium on Statistics in Sports (2024).
+
+Developed a Bayesian approach to ranking elite youth triathletes that greatly outperformed the USAT points system.
 
 ![BlimpServe application interface](/assets/images/blimp_app.png)
 
@@ -148,8 +172,6 @@ The simulator uses the Euler-Cromer method and a configurable time step so users
 It was initially developed to support the design of a balloon-launched rocket that was successfully launched in 2020.
 
 Validation against real-world flights showed an average error of **less than 5%**.
-
-[View launch image](https://media.discordapp.net/attachments/445554232637128716/1193382749176873010/image.png)
 
 ![Scout Infinity concept diagram](/assets/images/scout_works.png)
 

@@ -2,26 +2,23 @@
   image:
     src: /assets/images/jnj.png
     alt: Johnson & Johnson logo
+  role: Software Engineering Contractor - Application Development
+  summary:
+    - Developing a web interface for the MARCH centralized model archival and retrieval system, including role-based access control, version-controlled model storage, and model exploration tools.
+    - Building a Dockerized Python web app that retrieves manufacturing data from Databricks and automatically generates editable model maintenance reports with charts, statistical analyses, and narrative summaries.
+    - Built a guardrailed GenAI agent to extract structured data from handwritten paper batch records with 1/20th the error of Copilot alone, plus a companion review app that sped up human review versus manual extraction.
+    - Extended the internal application framework built during my Co-Op with interactive documentation, Jenkins CI/CD integration, Databricks/Teradata connections, FastAPI support, and HTMX interactivity.
+    - Built and deployed tools for device design-space search, filter adsorption modeling, MSAT pathmapping, and intensified perfusion process monitoring.
+- company: Johnson & Johnson
+  image:
+    src: /assets/images/jnj.png
+    alt: Johnson & Johnson logo
   role: Process Science Modeling and Data Co-Op
   summary:
-    - Sped up app development in my team by creating a new Python application framework and UI component library using Jinja and Flask.
+    - Sped up app development in my team by creating a new Python application framework and J&J brand-compliant UI component library using Jinja and Flask.
     - Centralized all site-to-site tech transfer data within J&J into a single application, allowing users to view technologies used and connect with relevant in-house experts.
-    - Developed a cell growth model using filterpy unscented Kalman filters that outperformed traditional machine learning models for prediction accuracy and interpretability.
+    - Implemented a mechanistic cell growth model using FilterPy unscented Kalman filters that outperformed linear regression, XGBoost, CART, and SVM for prediction accuracy on trial data.
     - Led the 28-person intern community within my group; organized guest speakers to share career insights.
-- company: 0NCH41N Games
-  role: Co-Founder and Software Developer
-  image:
-    src: /assets/images/llcgamepng_crop.png
-    alt: LLCGame.io gameplay screenshot
-  links:
-    - label: Visit LLCGame.io
-      url: https://llcgame.io/
-  summary:
-    - Starting in 2021, I co-founded *0NCH41N Games*, a game development company focused on multiplayer Web3 games.
-    - We initially built the yield aggregation system *HellHound.dog*, which used a unique reflection-based design to maximize long-term yield.
-    - In 2023, we launched LLCGame.io, a real-time multiplayer browser game with a decentralized cryptocurrency exchange.
-    - After the beta test, I helped secure more than **$20,000 in grant funding** from Arbitrum, Findora, and Lootchain to fund further development and marketing.
-    - I represented the company in interviews with major ecosystem players such as Polygon and Arbitrum, and later partnered with Scenario to explore generative AI for user-generated content and modding.
 - company: Mixed Reality Laboratory
   role: Research Intern
   image:

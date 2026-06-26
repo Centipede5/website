@@ -2,8 +2,8 @@ brand_name: Calvin Ristad
 hero:
   first_name: Calvin
   last_name: Ristad
-  subtitle: AI and Software Engineer
-  summary: I build AI agents, browser games, simulation tools, and applied product prototypes across software, hardware, and research environments.
+  subtitle: Application Developer and Software Engineer
+  summary: I build dashboarding, workflow automation, AI extraction, data visualization, and browser game systems across software, manufacturing, and public-interest products.
   actions:
     - label: GitHub
       url: https://github.com/Centipede5
@@ -19,7 +19,7 @@ hero:
     alt: Portrait of Calvin Ristad
 resume:
   pdf_url: /assets/documents/calvin-ristad-resume.pdf
-  preview_url: https://docs.google.com/document/d/1WK-Qtuf0hJYnv9nvWtzElhkX9dDKE1h3w7UiosLewMI/preview
+  preview_url: /assets/documents/calvin-ristad-resume.pdf
 demo:
   heading: Game Demo
   title: Shotwars.io
