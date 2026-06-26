@@ -78,6 +78,8 @@ I developed *Vertex Builder*, an x402 powered agentic marketplace that allows bo
 
 [Visit vertexbuilder.ai](https://vertexbuilder.ai)
 
+![OurFreePantry project cover image](/assets/images/ourfreepantry-cover.png)
+
 ### OurFreePantry.org
 
 Created a free app to help people find free food near them tailored to their cultural and dietary needs.
