@@ -13,15 +13,17 @@
   image:
     src: /assets/images/ourfreepantry-cover.png
     alt: OurFreePantry project cover image
+    width: 1080
+    height: 540
   description:
     - Created a free app to help people find free food near them tailored to their cultural and dietary needs.
     - Uses a visual language model to infer pantry inventories from uploaded pictures and Firebase to maintain those inventories.
 - title: Macros.cheap
   image:
-    src: https://centipede5.github.io/macros_cheap/images/meta-tags.png
+    src: /assets/images/macros-cheap-meta-tags.png
     alt: Macros.cheap web application interface
-    width: 1200
-    height: 630
+    width: 1536
+    height: 1024
   links:
     - label: Visit macros.cheap
       url: https://centipede5.github.io/macros_cheap/

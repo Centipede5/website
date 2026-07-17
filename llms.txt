@@ -86,7 +86,7 @@ Created a free app to help people find free food near them tailored to their cul
 
 Uses a visual language model to infer pantry inventories from uploaded pictures and Firebase to maintain those inventories.
 
-![Macros.cheap web application interface](https://centipede5.github.io/macros_cheap/images/meta-tags.png)
+![Macros.cheap web application interface](/assets/images/macros-cheap-meta-tags.png)
 
 ### Macros.cheap
 

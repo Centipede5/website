@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('js-enabled');
+
   const navToggle = document.querySelector('.navbar-toggler');
   const navMenu = document.getElementById('navmenu');
   if (navToggle && navMenu) {
@@ -36,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Targets for scroll animations
   const revealElements = document.querySelectorAll('.reveal');
   revealElements.forEach(el => observer.observe(el));
+  setTimeout(() => {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  }, 1200);
+  window.addEventListener('beforeprint', () => {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  });
 
   // Ambient Background Particle Animation
   const canvas = document.getElementById('bg-canvas');
