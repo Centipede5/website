@@ -14,20 +14,38 @@
               {% if project.gallery %}
                 <div class="project-gallery">
                   {% for item in project.gallery %}
+                    {% if item.image contains '://' %}
+                      {% assign gallery_image_href = item.image %}
+                    {% else %}
+                      {% assign gallery_image_href = item.image | relative_url %}
+                    {% endif %}
                     <a class="project-gallery-item" href="{{ item.url }}" target="_blank" rel="noreferrer">
-                      <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" decoding="async">
+                      <img src="{{ gallery_image_href }}" alt="{{ item.alt }}" width="356" height="200" loading="lazy" decoding="async">
                       <span>{{ item.title }}</span>
                     </a>
                   {% endfor %}
                 </div>
               {% else %}
                 <div class="project-media">
-                  <img
-                    src="{{ project.image.src | relative_url }}"
-                    alt="{{ project.image.alt }}"
-                    loading="lazy"
-                    decoding="async"
-                  >
+                  {% assign image_src = project.image.src %}
+                  {% if project.image.src contains '://' %}
+                    {% assign image_href = project.image.src %}
+                  {% else %}
+                    {% assign image_href = project.image.src | relative_url %}
+                  {% endif %}
+                  <picture>
+                    {% if image_src contains '/assets/images/' and image_src contains '.png' %}
+                      <source srcset="{{ image_src | replace: '.png', '.webp' | relative_url }}" type="image/webp">
+                    {% endif %}
+                    <img
+                      src="{{ image_href }}"
+                      alt="{{ project.image.alt }}"
+                      {% if project.image.width %}width="{{ project.image.width }}"{% endif %}
+                      {% if project.image.height %}height="{{ project.image.height }}"{% endif %}
+                      loading="lazy"
+                      decoding="async"
+                    >
+                  </picture>
                 </div>
               {% endif %}
             </div>

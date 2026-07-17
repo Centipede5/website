@@ -2,6 +2,8 @@
   image:
     src: /assets/images/jnj.png
     alt: Johnson & Johnson logo
+    width: 632
+    height: 355
   role: Software Engineering Contractor - Application Development
   summary:
     - Developing a web interface for the MARCH centralized model archival and retrieval system, including role-based access control, version-controlled model storage, and model exploration tools.
@@ -13,6 +15,8 @@
   image:
     src: /assets/images/jnj.png
     alt: Johnson & Johnson logo
+    width: 632
+    height: 355
   role: Process Science Modeling and Data Co-Op
   summary:
     - Sped up app development in my team by creating a new Python application framework and J&J brand-compliant UI component library using Jinja and Flask.
@@ -24,6 +28,8 @@
   image:
     src: /assets/images/uic_white.png
     alt: University of Illinois Chicago logo
+    width: 1899
+    height: 602
   links:
     - label: Read the CathSym paper
       url: https://pubmed.ncbi.nlm.nih.gov/34892308/

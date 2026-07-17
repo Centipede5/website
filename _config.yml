@@ -1,7 +1,7 @@
 title: Calvin Ristad
 description: Portfolio and resume for Calvin Ristad.
 baseurl: ""
-url: ""
+url: "https://calvin.ristad.org"
 markdown: kramdown
 permalink: pretty
 exclude:

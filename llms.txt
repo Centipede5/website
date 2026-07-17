@@ -106,17 +106,17 @@ Built a scalable, high-performance web crawler and GUI for VarietySplash product
 
 Created additional visualization apps for Wawa service maps, Rutgers bus arrivals, restaurant wait times, and a FrameNet explorer.
 
-[![Shotwars.io promotional image](https://cdn.titotu.io/images/games/shotwars-io-356x200.jpg)
+[![Shotwars.io promotional image](/assets/images/shotwars-io-356x200.jpg)
 Shotwars.io](https://shotwars.io)
-[![Glork.io promotional image](https://cdn.titotu.io/images/games/glork-io-356x200.jpg)
+[![Glork.io promotional image](/assets/images/glork-io-356x200.jpg)
 Glork.io](http://glork.io)
-[![Mine Smashers Club promotional image](https://cdn.titotu.io/images/games/minesmashers-club-356x200.jpg)
+[![Mine Smashers Club promotional image](/assets/images/minesmashers-club-356x200.jpg)
 Mine Smashers Club](http://minesmashers.club)
-[![Fallerz.io promotional image](https://cdn.titotu.io/images/games/fallerz-io-356x200.jpg)
+[![Fallerz.io promotional image](/assets/images/fallerz-io-356x200.jpg)
 Fallerz.io](http://Fallerz.io)
-[![Mine Parkour Club promotional image](https://cdn.titotu.io/images/games/mineparkour-io-356x200.jpg)
+[![Mine Parkour Club promotional image](/assets/images/mineparkour-io-356x200.jpg)
 Mine Parkour Club](http://mineparkour.club)
-[![Biplanes.ga promotional image](https://cdn.titotu.io/images/games/biplanes-io-356x200.jpg)
+[![Biplanes.ga promotional image](/assets/images/biplanes-io-356x200.jpg)
 Biplanes.ga](http://biplanes.ga)
 
 ### .IO Style Web Games

@@ -20,8 +20,264 @@
   --radius-lg: 1.5rem;
   --radius-md: 1rem;
 
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Outfit', sans-serif;
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: Outfit, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(100% - 1.5rem, 1140px);
+  margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: calc(var(--gutter-x, 1.5rem) * -0.5);
+  row-gap: var(--gutter-y, 0);
+}
+
+.row > * {
+  width: 100%;
+  padding-inline: calc(var(--gutter-x, 1.5rem) * 0.5);
+}
+
+.g-0 { --gutter-x: 0; --gutter-y: 0; }
+.g-4 { --gutter-x: 1.5rem; --gutter-y: 1.5rem; }
+.gy-4 { --gutter-y: 1.5rem; }
+.align-items-center { align-items: center; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-center { justify-content: center; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.d-flex, .d-inline-flex { display: flex; }
+.d-inline-flex { display: inline-flex; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 1rem; }
+.w-100 { width: 100%; }
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.top-50 { top: 50%; }
+.end-0 { right: 0; }
+.translate-middle-y { transform: translateY(-50%); }
+.p-0 { padding: 0; }
+.py-0 { padding-block: 0; }
+.py-4 { padding-block: 1.5rem; }
+.pt-0 { padding-top: 0; }
+.pb-0 { padding-bottom: 0; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mx-1 { margin-inline: 0.25rem; }
+.ms-3 { margin-left: 1rem; }
+.ms-auto { margin-left: auto; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+.fs-5 { width: 1.25rem; height: 1.25rem; }
+.text-light { color: #f8f9fa; }
+.text-muted { color: rgba(255, 255, 255, 0.62); }
+.lead { font-size: 1.25rem; font-weight: 300; }
+.display-4 { font-size: clamp(3rem, 6vw, 5rem); }
+.h2 { font-size: calc(1.325rem + 0.9vw); }
+.h4 { font-size: calc(1.275rem + 0.3vw); }
+.rounded-circle { border-radius: 50%; }
+.form-control {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+.col-12 { flex: 0 0 auto; width: 100%; }
+
+@media (min-width: 768px) {
+  .flex-md-row { flex-direction: row; }
+  .mt-md-0 { margin-top: 0; }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 { flex: 0 0 auto; width: 33.333333%; }
+  .col-lg-5 { flex: 0 0 auto; width: 41.666667%; }
+  .col-lg-6 { flex: 0 0 auto; width: 50%; }
+  .col-lg-7 { flex: 0 0 auto; width: 58.333333%; }
+  .col-lg-8 { flex: 0 0 auto; width: 66.666667%; }
+  .order-lg-1 { order: 1; }
+  .order-lg-2 { order: 2; }
+}
+
+.img-fluid,
+picture {
+  max-width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-brand {
+  padding-block: 0.3125rem;
+  margin-right: 1rem;
+}
+
+.navbar-toggler {
+  display: none;
+  margin-left: auto;
+  padding: 0.35rem 0.6rem;
+  color: var(--color-ink);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(currentColor, currentColor) center 0.35rem/1.25rem 2px no-repeat,
+    linear-gradient(currentColor, currentColor) center/1.25rem 2px no-repeat,
+    linear-gradient(currentColor, currentColor) center 1.05rem/1.25rem 2px no-repeat;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-basis: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fixed-top {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1030;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden auto;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-dialog {
+  width: min(100% - 1rem, 800px);
+  margin: 1.75rem auto;
+}
+
+.modal-dialog-centered {
+  min-height: calc(100% - 3.5rem);
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-header {
+  justify-content: space-between;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.btn-close {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.35rem;
+  right: 0.35rem;
+  height: 2px;
+  background: currentColor;
+}
+
+.btn-close::before { transform: rotate(45deg); }
+.btn-close::after { transform: rotate(-45deg); }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .ms-auto {
+    margin-left: 0;
+  }
 }
 
 html {
@@ -525,9 +781,13 @@ main section {
 
 /* Buttons */
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-heading);
   font-weight: 600;
   letter-spacing: 0.05em;
+  border: 1px solid transparent;
   border-radius: 2rem;
   padding: 0.75rem 1.75rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -535,6 +795,12 @@ main section {
   font-size: 0.85rem;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.75rem;
 }
 
 .btn-accent {

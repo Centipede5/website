@@ -2,6 +2,8 @@
   image:
     src: /assets/images/vertexbuilder.png
     alt: Vertex Builder
+    width: 1900
+    height: 870
   links:
     - label: Visit vertexbuilder.ai
       url: https://vertexbuilder.ai
@@ -18,6 +20,8 @@
   image:
     src: https://centipede5.github.io/macros_cheap/images/meta-tags.png
     alt: Macros.cheap web application interface
+    width: 1200
+    height: 630
   links:
     - label: Visit macros.cheap
       url: https://centipede5.github.io/macros_cheap/
@@ -44,32 +48,34 @@
   gallery:
     - title: Shotwars.io
       url: https://shotwars.io
-      image: https://cdn.titotu.io/images/games/shotwars-io-356x200.jpg
+      image: /assets/images/shotwars-io-356x200.jpg
       alt: Shotwars.io promotional image
     - title: Glork.io
       url: http://glork.io
-      image: https://cdn.titotu.io/images/games/glork-io-356x200.jpg
+      image: /assets/images/glork-io-356x200.jpg
       alt: Glork.io promotional image
     - title: Mine Smashers Club
       url: http://minesmashers.club
-      image: https://cdn.titotu.io/images/games/minesmashers-club-356x200.jpg
+      image: /assets/images/minesmashers-club-356x200.jpg
       alt: Mine Smashers Club promotional image
     - title: Fallerz.io
       url: http://Fallerz.io
-      image: https://cdn.titotu.io/images/games/fallerz-io-356x200.jpg
+      image: /assets/images/fallerz-io-356x200.jpg
       alt: Fallerz.io promotional image
     - title: Mine Parkour Club
       url: http://mineparkour.club
-      image: https://cdn.titotu.io/images/games/mineparkour-io-356x200.jpg
+      image: /assets/images/mineparkour-io-356x200.jpg
       alt: Mine Parkour Club promotional image
     - title: Biplanes.ga
       url: http://biplanes.ga
-      image: https://cdn.titotu.io/images/games/biplanes-io-356x200.jpg
+      image: /assets/images/biplanes-io-356x200.jpg
       alt: Biplanes.ga promotional image
 - title: Insanegames.io
   image:
     src: /assets/images/insanegames.png
     alt: Insanegames.io webgame portal
+    width: 1200
+    height: 586
   description:
     - Designed and implemented a web game portal with a streamlined submission and review pipeline.
     - Managed cloud hosting, database, Google Analytics, API maintenance, proxies, anti-spam / anti-bot measures, and developer login/chat/storage APIs.
@@ -78,6 +84,8 @@
   image:
     src: /assets/images/cassis.png
     alt: CASSIS logo
+    width: 1262
+    height: 528
   description:
     - Built a linear programming based system to optimize high school swimming lineups.
     - Presented work at the Cascadia Symposium on Statistics in Sports (2024).
@@ -86,6 +94,8 @@
   image:
     src: /assets/images/blimp_app.png
     alt: BlimpServe application interface
+    width: 858
+    height: 681
   description:
     - I co-designed a proprietary medicine-transport airship drone to address supply chain issues in underserved and hard-to-reach locations.
     - "*BlimpServe* avoids the infrastructure requirements of roads and airports while using lightweight solar panels to extend range and improve efficiency."
@@ -95,6 +105,8 @@
   image:
     src: /assets/images/rocketjs.png
     alt: Rocket.js simulator visualization
+    width: 453
+    height: 453
   description:
     - I built a high-performance rocket flight simulator for multi-stage, clustered, and air-launched model rockets using thrust data from thrustcurve.org.
     - The simulator uses the Euler-Cromer method and a configurable time step so users can trade accuracy for performance.
@@ -104,8 +116,10 @@
   image:
     src: /assets/images/scout_works.png
     alt: Scout Infinity concept diagram
+    width: 858
+    height: 681
   links:
-    - label: Learn more
+    - label: Learn more about Scout Infinity
       url: https://centipede5.github.io/scout_infinity/
   description:
     - I co-designed an augmented smartphone case using Internet of Things technology to improve the mobile experience and democratize long-range communication.

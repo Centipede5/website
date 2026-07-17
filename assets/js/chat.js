@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const chatModalEl = document.getElementById('chatModal');
   if (!chatModalEl) return;
-  const chatModal = new bootstrap.Modal(chatModalEl);
+  const modalCloseButtons = chatModalEl.querySelectorAll('[data-modal-close]');
 
   const heroChatInput = document.getElementById('hero-chat-input');
   const heroChatSubmit = document.querySelector('.hero-chat-submit');
@@ -12,9 +12,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalChatSubmit = document.getElementById('modalChatSubmit');
   const chatMessages = document.getElementById('chatMessages');
 
+  function showModal() {
+    chatModalEl.classList.add('show');
+    chatModalEl.removeAttribute('aria-hidden');
+    document.body.classList.add('modal-open');
+  }
+
+  function hideModal() {
+    chatModalEl.classList.remove('show');
+    chatModalEl.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  modalCloseButtons.forEach(button => button.addEventListener('click', hideModal));
+  chatModalEl.addEventListener('click', (event) => {
+    if (event.target === chatModalEl) hideModal();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && chatModalEl.classList.contains('show')) hideModal();
+  });
+
   // Open modal and optionally run search
   function openChat(initialQuery) {
-    chatModal.show();
+    showModal();
     setTimeout(() => {
       modalChatInput.focus();
       if (initialQuery) {

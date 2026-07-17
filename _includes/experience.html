@@ -11,13 +11,26 @@
             <div class="row g-0 align-items-center">
               {% if item.image %}
               <div class="col-lg-4">
-                <img
-                  class="content-card-image content-card-image-horizontal"
-                  src="{{ item.image.src | relative_url }}"
-                  alt="{{ item.image.alt }}"
-                  loading="lazy"
-                  decoding="async"
-                >
+                {% assign image_src = item.image.src %}
+                {% if item.image.src contains '://' %}
+                  {% assign image_href = item.image.src %}
+                {% else %}
+                  {% assign image_href = item.image.src | relative_url %}
+                {% endif %}
+                <picture>
+                  {% if image_src contains '/assets/images/' and image_src contains '.png' %}
+                    <source srcset="{{ image_src | replace: '.png', '.webp' | relative_url }}" type="image/webp">
+                  {% endif %}
+                  <img
+                    class="content-card-image content-card-image-horizontal"
+                    src="{{ image_href }}"
+                    alt="{{ item.image.alt }}"
+                    {% if item.image.width %}width="{{ item.image.width }}"{% endif %}
+                    {% if item.image.height %}height="{{ item.image.height }}"{% endif %}
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </picture>
               </div>
               {% endif %}
               <div class="{% if item.image %}col-lg-8{% else %}col-12{% endif %}">

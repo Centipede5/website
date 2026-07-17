@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.querySelector('.navbar-toggler');
+  const navMenu = document.getElementById('navmenu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isExpanded));
+      navMenu.classList.toggle('show', !isExpanded);
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navMenu.classList.remove('show');
+      });
+    });
+  }
+
   // Intersection Observer for scroll animations
   const observerOptions = {
     root: null,
